@@ -1,0 +1,22 @@
+{
+  "name": "jquery-pipe",
+  "main": "built/jquery-pipe.js",
+  "version": "0.1.0",
+  "description": "Some module...",
+  "dependencies": {
+    "jquery": "*",
+    "pipe": "0.3.2",
+    "lodash": "~2.4.1",
+    "jquery-meta-data": "*"
+  },
+  "devDependencies": {
+    "requirejs": "*",
+    "requirejs-text": "*",
+    "underscore": "*",
+    "jquery": "*",
+    "qunit": "*"
+  },
+  "resolutions": {
+    "pipe": "0.3.2"
+  }
+}

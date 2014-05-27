@@ -1,0 +1,5 @@
+//     JqueryPipe
+//     (c) simonfan
+//     JqueryPipe is licensed under the MIT terms.
+
+define(["require","exports","module","lodash","jquery","pipe","jquery-meta-data"],function(e,t,n){function a(e){var t=e.split(u),n=t.shift();return{method:n,args:t}}var r=e("lodash"),i=e("jquery"),s=e("pipe"),o=e("jquery-meta-data"),u=/\s*:\s*/g,f=n.exports=s.extend({initialize:function(t,n){n=n||{},n.destination=t,n.source=n.source||{},r.defaults(n,this.metaDataOptions);var i=t.metaData(n);s.prototype.initialize.call(this,i,n)},metaDataOptions:{prefix:"pipe",parse:function(t){return t.split(/\s*,\s*/g)}},destGet:function(t,n){var r=a(n);return t[r.method].apply(t,r.args)},destSet:function(t,n,r){var i=a(n),s=i.args;return s.push(r),t[i.method].apply(t,s)}});i.prototype.pipe=function(t){return f(this,t)}});

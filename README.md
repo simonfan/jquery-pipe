@@ -1,0 +1,3 @@
+# jquery-pipe[![Build Status](https://secure.travis-ci.org//jquery-pipe.png?branch=master)](http://travis-ci.org//jquery-pipe)
+
+Some module...
